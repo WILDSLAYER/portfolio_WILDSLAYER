@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio — Dev Junior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">WILDSLAYER</a>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="tri-pattern">
+    <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="triGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+          <!-- up triangle -->
+          <polygon points="40,0 80,80 0,80" fill="none" stroke="#C49A2A" stroke-width="0.8"/>
+          <!-- down triangle -->
+          <polygon points="0,0 80,0 40,80" fill="none" stroke="#C49A2A" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="800" height="600" fill="url(#triGrid)"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyemark"></div>
+    <p class="hero-tag">Desarrollador Junior · 2025</p>
+    <h1>Tu<span>Nombre.</span></h1>
+    <p class="hero-subtitle">Construyo interfaces que respetan la geometría del diseño</p>
+    <a href="#projects" class="hero-cta">Ver proyectos</a>
+  </div>
+  <div class="hero-scroll">scroll</div>
+</section>
+
+<div class="section-divider"><div class="section-divider-diamond"></div></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="tri-pattern">
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="aboutPat" width="40" height="40" patternUnits="userSpaceOnUse">
+          <polygon points="20,2 38,38 2,38" fill="none" stroke="#C49A2A" stroke-width="0.6"/>
+        </pattern>
+      </defs>
+      <rect width="400" height="400" fill="url(#aboutPat)"/>
+    </svg>
+  </div>
+  <div class="about-grid">
+    <div class="about-geo">
+      <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+        <!-- Geometric figure inspired by the poster -->
+        <!-- Fan/horn element -->
+        <g transform="translate(140,60)">
+          <line x1="0" y1="0" x2="-55" y2="0" stroke="#C49A2A" stroke-width="1" opacity="0.5"/>
+          <line x1="0" y1="0" x2="-52" y2="-18" stroke="#C49A2A" stroke-width="1" opacity="0.5"/>
+          <line x1="0" y1="0" x2="-44" y2="-34" stroke="#C49A2A" stroke-width="1" opacity="0.5"/>
+          <line x1="0" y1="0" x2="-32" y2="-46" stroke="#C49A2A" stroke-width="1" opacity="0.5"/>
+          <line x1="0" y1="0" x2="-16" y2="-53" stroke="#C49A2A" stroke-width="1" opacity="0.5"/>
+          <line x1="0" y1="0" x2="2"  y2="-55" stroke="#C49A2A" stroke-width="1" opacity="0.5"/>
+          <arc/>
+          <path d="M-55,0 A55,55 0 0,1 2,-55" fill="none" stroke="#9A7318" stroke-width="1.2"/>
+        </g>
+        <!-- Body diamond grid -->
+        <g transform="translate(80,90)">
+          <!-- rows of diamonds -->
+          <polygon points="60,0 120,40 60,80 0,40" fill="#0D0B07"/>
+          <polygon points="60,0 120,40 60,80 0,40" fill="none" stroke="#C49A2A" stroke-width="1"/>
+
+          <polygon points="60,80 120,120 60,160 0,120" fill="#0D0B07"/>
+          <polygon points="60,80 120,120 60,160 0,120" fill="none" stroke="#C49A2A" stroke-width="1"/>
+
+          <polygon points="60,160 120,200 60,240 0,200" fill="none" stroke="#C49A2A" stroke-width="1"/>
+
+          <!-- inner highlights -->
+          <ellipse cx="60" cy="40" rx="8" ry="5" fill="#F0E9D2" opacity="0.9"/>
+          <ellipse cx="60" cy="120" rx="6" ry="4" fill="#F0E9D2" opacity="0.7"/>
+
+          <!-- diagonal lines -->
+          <line x1="0" y1="40" x2="120" y2="40" stroke="#C49A2A" stroke-width="0.5" opacity="0.4"/>
+          <line x1="0" y1="120" x2="120" y2="120" stroke="#C49A2A" stroke-width="0.5" opacity="0.4"/>
+        </g>
+        <!-- Eye at top -->
+        <ellipse cx="140" cy="60" rx="10" ry="6" fill="#C49A2A"/>
+        <circle cx="140" cy="60" r="3.5" fill="#0D0B07"/>
+        <circle cx="141.5" cy="58.5" r="1" fill="#F0E9D2"/>
+        <!-- Gold accent line -->
+        <line x1="40" y1="260" x2="240" y2="260" stroke="#C49A2A" stroke-width="1.5" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="about-text">
+      <p class="section-label">// 001 — SOBRE MÍ</p>
+      <h2>Código con<br>intención artística.</h2>
+      <p>Soy desarrollador junior apasionado por construir experiencias web que combinan funcionalidad con diseño intencional. Me interesa el detalle, la precisión y el arte que puede vivir en un navegador.</p>
+      <p>Actualmente busco mi primera oportunidad profesional donde pueda aportar creatividad técnica a proyectos reales.</p>
+      <p style="font-family:'Space Mono',monospace; font-size:0.75rem; letter-spacing:0.1em; color:var(--gold-dark); margin-top: 2rem;">
+        Colombia · Disponible para trabajo remoto
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><div class="section-divider-diamond"></div></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="tri-pattern">
+    <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="skillPat" width="60" height="60" patternUnits="userSpaceOnUse">
+          <polygon points="30,2 58,58 2,58" fill="none" stroke="#C49A2A" stroke-width="0.7"/>
+          <polygon points="30,58 58,2 2,2" fill="none" stroke="#C49A2A" stroke-width="0.4"/>
+        </pattern>
+      </defs>
+      <rect width="800" height="400" fill="url(#skillPat)"/>
+    </svg>
+  </div>
+  <p class="section-label" style="text-align:center;">// 002 — HABILIDADES</p>
+  <h2>Mi Stack.</h2>
+  <p class="skills-intro">Herramientas con las que construyo cada día.</p>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <span class="skill-icon">[ HTML ]</span>
+      <div class="skill-name">HTML5</div>
+      <div class="skill-desc">Semántica, accesibilidad, estructura sólida.</div>
+      <div class="skill-level"><div class="skill-level-fill" style="width:90%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">[ CSS ]</span>
+      <div class="skill-name">CSS3</div>
+      <div class="skill-desc">Animaciones, grid, diseño responsivo.</div>
+      <div class="skill-level"><div class="skill-level-fill" style="width:85%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">[ JS ]</span>
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-desc">ES6+, DOM, lógica del cliente.</div>
+      <div class="skill-level"><div class="skill-level-fill" style="width:75%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">[ RE ]</span>
+      <div class="skill-name">React</div>
+      <div class="skill-desc">Componentes, hooks, estado.</div>
+      <div class="skill-level"><div class="skill-level-fill" style="width:65%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">[ GIT ]</span>
+      <div class="skill-name">Git</div>
+      <div class="skill-desc">Control de versiones, flujo de trabajo.</div>
+      <div class="skill-level"><div class="skill-level-fill" style="width:80%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">[ API ]</span>
+      <div class="skill-name">REST APIs</div>
+      <div class="skill-desc">Fetch, JSON, integración de servicios.</div>
+      <div class="skill-level"><div class="skill-level-fill" style="width:70%"></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><div class="section-divider-diamond"></div></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">// 003 — PROYECTOS</p>
+  <h2>Lo que he construido.</h2>
+  <p class="projects-intro">Proyectos personales y de práctica que representan mi aprendizaje.</p>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <svg class="project-card-bg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="60,0 120,120 0,120" fill="#C49A2A"/>
+      </svg>
+      <div class="project-num">01</div>
+      <div class="project-title">App del Clima</div>
+      <p class="project-desc">Aplicación que consume la API de OpenWeather para mostrar pronósticos en tiempo real.</p>
+      <div class="project-tags">
+        <span class="tag">React</span>
+        <span class="tag">REST API</span>
+        <span class="tag">CSS Grid</span>
+      </div>
+      <a href="#" class="project-link">Ver proyecto →</a>
+    </div>
+
+    <div class="project-card">
+      <svg class="project-card-bg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="60,0 120,120 0,120" fill="#C49A2A"/>
+      </svg>
+      <div class="project-num">02</div>
+      <div class="project-title">Todo List</div>
+      <p class="project-desc">Gestor de tareas con persistencia en localStorage, filtros y animaciones fluidas.</p>
+      <div class="project-tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">LocalStorage</span>
+        <span class="tag">CSS</span>
+      </div>
+      <a href="#" class="project-link">Ver proyecto →</a>
+    </div>
+
+    <div class="project-card">
+      <svg class="project-card-bg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="60,0 120,120 0,120" fill="#C49A2A"/>
+      </svg>
+      <div class="project-num">03</div>
+      <div class="project-title">Portfolio v1</div>
+      <p class="project-desc">Primera versión de mi portafolio personal, diseñado con enfoque geométrico artesanal.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Diseño</span>
+      </div>
+      <a href="#" class="project-link">Ver proyecto →</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"><div class="section-divider-diamond"></div></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="tri-pattern">
+    <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="contactPat" width="80" height="80" patternUnits="userSpaceOnUse">
+          <polygon points="40,2 78,78 2,78" fill="none" stroke="#C49A2A" stroke-width="0.6"/>
+        </pattern>
+      </defs>
+      <rect width="800" height="400" fill="url(#contactPat)"/>
+    </svg>
+  </div>
+  <p class="section-label">// 004 — CONTACTO</p>
+  <h2>Hablemos.</h2>
+  <p class="contact-text">Estoy buscando mi primera oportunidad. Si tienes un proyecto interesante o una posición abierta, me encantaría escucharte.</p>
+  <div class="contact-links">
+    <a href="mailto:tu@email.com" class="contact-link primary">tu@email.com</a>
+    <a href="https://github.com/tunombre" class="contact-link" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/tunombre" class="contact-link" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Tu Nombre — Dev Junior</p>
+  <div class="footer-geo">
+    <div class="footer-diamond"></div>
+    <div class="footer-diamond" style="opacity:0.5"></div>
+    <div class="footer-diamond" style="opacity:0.25"></div>
+  </div>
+  <p>Colombia · Remoto</p>
+</footer>
+
+</body>
+</html>
