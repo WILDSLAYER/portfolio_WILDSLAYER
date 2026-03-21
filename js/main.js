@@ -25,8 +25,8 @@
     const maxIndex = Math.max(0, totalCards - visibleCount);
 
     // Clamp currentIndex
-    if (currentIndex > maxIndex) currentIndex = maxIndex;
-    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = maxIndex;
 
     // Calculate the offset
     // Each card width = (trackWrapperWidth - gap*(visibleCount-1)) / visibleCount
@@ -39,8 +39,8 @@
     track.style.transform = `translateX(-${offset}px)`;
 
     // Update button states
-    btnPrev.disabled = currentIndex === 0;
-    btnNext.disabled = currentIndex >= maxIndex;
+    btnPrev.disabled = false;
+    btnNext.disabled = false;
   }
 
   btnPrev.addEventListener('click', function () {
