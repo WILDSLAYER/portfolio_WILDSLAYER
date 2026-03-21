@@ -37,7 +37,7 @@
   </div>
 
   <div class="hero-content">
-    <p class="hero-tag">Desarrollador Junior :3</p>
+    <p class="hero-tag">Desarrollador Junior </p>
     <h1><span>WILDSLAYER</span></h1>
     <p class="hero-subtitle">El aprendizaje es un tesoro que seguirá a su dueño a todas partes.</p>
     <a href="#projects" class="hero-cta">Ver proyectos</a>
@@ -176,55 +176,64 @@
   <p class="section-label">// 003 — PROYECTOS</p>
   <h2>Lo que he construido.</h2>
   <p class="projects-intro">Proyectos personales y de práctica que representan mi aprendizaje.</p>
-  <button>&lt;</button>
-  <div class="projects-grid">
-    <div class="project-card">
-      <svg class="project-card-bg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="60,0 120,120 0,120" fill="#C49A2A"/>
-      </svg>
-      <div class="project-num">01</div>
-      <div class="project-title">App del Clima</div>
-      <p class="project-desc">Aplicación que consume la API de OpenWeather para mostrar pronósticos en tiempo real.</p>
-      <div class="project-tags">
-        <span class="tag">React</span>
-        <span class="tag">REST API</span>
-        <span class="tag">CSS Grid</span>
+
+  <div class="projects-carousel">
+    <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Proyecto anterior">&lsaquo;</button>
+
+    <div class="projects-track-wrapper">
+      <div class="projects-track" id="projects-track">
+
+        <div class="project-card">
+          <svg class="project-card-bg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="60,0 120,120 0,120" fill="#C49A2A"/>
+          </svg>
+          <div class="project-num">01</div>
+          <div class="project-title">App del Clima</div>
+          <p class="project-desc">Aplicación que consume la API de OpenWeather para mostrar pronósticos en tiempo real.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">REST API</span>
+            <span class="tag">CSS Grid</span>
+          </div>
+          <a href="#" class="project-link">Ver proyecto →</a>
+        </div>
+
+        <div class="project-card">
+          <svg class="project-card-bg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="60,0 120,120 0,120" fill="#C49A2A"/>
+          </svg>
+          <div class="project-num">02</div>
+          <div class="project-title">Todo List</div>
+          <p class="project-desc">Gestor de tareas con persistencia en localStorage, filtros y animaciones fluidas.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">LocalStorage</span>
+            <span class="tag">CSS</span>
+          </div>
+          <a href="#" class="project-link">Ver proyecto →</a>
+        </div>
+
+        <div class="project-card">
+          <svg class="project-card-bg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="60,0 120,120 0,120" fill="#C49A2A"/>
+          </svg>
+          <div class="project-num">03</div>
+          <div class="project-title">Portfolio v1</div>
+          <p class="project-desc">Primera versión de mi portafolio personal, diseñado con enfoque geométrico artesanal.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Diseño</span>
+          </div>
+          <a href="#" class="project-link">Ver proyecto →</a>
+        </div>
+
       </div>
-      <a href="#" class="project-link">Ver proyecto →</a>
     </div>
 
-    <div class="project-card">
-      <svg class="project-card-bg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="60,0 120,120 0,120" fill="#C49A2A"/>
-      </svg>
-      <div class="project-num">02</div>
-      <div class="project-title">Todo List</div>
-      <p class="project-desc">Gestor de tareas con persistencia en localStorage, filtros y animaciones fluidas.</p>
-      <div class="project-tags">
-        <span class="tag">JavaScript</span>
-        <span class="tag">LocalStorage</span>
-        <span class="tag">CSS</span>
-      </div>
-      <a href="#" class="project-link">Ver proyecto →</a>
-    </div>
-
-    <div class="project-card">
-      <svg class="project-card-bg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="60,0 120,120 0,120" fill="#C49A2A"/>
-      </svg>
-      <div class="project-num">03</div>
-      <div class="project-title">Portfolio v1</div>
-      <p class="project-desc">Primera versión de mi portafolio personal, diseñado con enfoque geométrico artesanal.</p>
-      <div class="project-tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">Diseño</span>
-      </div>
-      <a href="#" class="project-link">Ver proyecto →</a>
-    </div>
-
+    <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Siguiente proyecto">&rsaquo;</button>
   </div>
-  <button>&gt;</button>
+
 </section>
 
 <div class="section-divider"><div class="section-divider-diamond"></div></div>
@@ -262,5 +271,6 @@
   <p>Colombia · Remoto</p>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
